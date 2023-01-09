@@ -16,7 +16,6 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "both": "concurrently \"npm run start\" \"nodemon backend/index.js\""
+        "eject": "react-scripts eject"
     }
 }
