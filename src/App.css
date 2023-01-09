@@ -1,0 +1,54 @@
+.headingMain {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: radial-gradient(circle, #553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.heading {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card,
+.navbar {
+    background-image: radial-gradient(circle, #553c9a, #ee4b2b);
+    padding: 10px;
+    color: white;
+}
+
+.pagination>li>a {
+    background-image: radial-gradient(circle, rgb(68, 48, 122), #ee4b2b);
+    padding: 15px;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    transition: .05s;
+}
+
+.pagination>li>a:hover {
+    transform: scale(1.2);
+}
+
+.pagination>li {
+    text-shadow: none;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.simpleBtn {
+    background-image: radial-gradient(circle, #553c9a, #ee4b2b);
+    color: white;
+}

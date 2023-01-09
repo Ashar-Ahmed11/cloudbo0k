@@ -1,0 +1,28 @@
+{
+    "name": "appname",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "https://bored-rose-slug.cyclic.app",
+    "dependencies": {
+        "@emotion/react": "^11.9.3",
+        "@emotion/styled": "^11.9.3",
+        "@material-ui/core": "^4.12.4",
+        "@material-ui/lab": "^4.0.0-alpha.61",
+        "@mui/material": "^5.8.6",
+        "bootstrap": "^5.1.3",
+        "concurrently": "^7.6.0",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.4.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^5.3.0",
+        "react-scripts": "1.0.14",
+        "react-spinners": "^0.13.3"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "both": "concurrently \"npm run start\" \"nodemon backend/index.js\""
+    }
+}
