@@ -19,7 +19,7 @@ const NoteState = (props)=>{
     const [addNoteLoader, setAddNoteLoader] = useState(false)
       const getNotes = async ()=>{
         setLoader(true)
-        const url = "/api/notes/fetchallnotes"
+        const url = "https://bored-rose-slug.cyclic.app/api/notes/fetchallnotes"
         const response = await fetch(url, {
           method: 'GET', // *GET, POST, PUT, DELETE, etc.
   
@@ -41,7 +41,7 @@ const NoteState = (props)=>{
     const addNote =async (e,title,description)=>{
       e.preventDefault()
       setAddNoteLoader(true)
-      const url = `/api/notes/addnote`
+      const url = `https://bored-rose-slug.cyclic.app/api/notes/addnote`
       const response = await fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
 
@@ -70,7 +70,7 @@ const NoteState = (props)=>{
     }
     const deleteNote = async (id)=>{
       setModalLoader(true)
-      const url = `/api/notes/deletenote/${id}`
+      const url = `https://bored-rose-slug.cyclic.app/api/notes/deletenote/${id}`
         const response = await fetch(url, {
           method: 'PUT', // *GET, POST, PUT, DELETE, etc.
   
@@ -94,7 +94,7 @@ const NoteState = (props)=>{
     const editNote = async (id,title,description,tag)=>{
 
       setModalLoader(true)
-      const url = `/api/notes/updatenote/${id}`
+      const url = `https://bored-rose-slug.cyclic.app/api/notes/updatenote/${id}`
       
         const response = await fetch(url, {
           method: 'PUT', // *GET, POST, PUT, DELETE, etc.
@@ -125,7 +125,7 @@ const NoteState = (props)=>{
 
     const login =async(email,password)=>{
       setLoader(true)
-      const url = `/api/auth/login`
+      const url = `https://bored-rose-slug.cyclic.app/api/auth/login`
       
       const response = await fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -163,7 +163,7 @@ const NoteState = (props)=>{
     }
     const signup=async (name,email,password)=>{
       setLoader(true)
-      const url = `/api/auth/createuser`
+      const url = `https://bored-rose-slug.cyclic.app/api/auth/createuser`
       
       const response = await fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
