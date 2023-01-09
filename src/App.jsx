@@ -19,7 +19,7 @@ export default function App() {
     return (
         <div>
                   
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
             <NoteState>
                     <Navbar />
                     <div className="container">
